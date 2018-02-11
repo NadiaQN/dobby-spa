@@ -1,0 +1,94 @@
+body{
+    margin: 0 auto;
+    p{
+        font-size: 0.8em;
+    }
+    .fix-margin{
+        margin: 0;
+    }
+    .row .fix-padding{
+        padding: 0;
+    }
+}
+.navbar{
+    background-color: $background_one;
+}
+.carousel{
+    max-width: 100%;
+}
+.services{
+    background-color: $background_two;
+    .circle-photo {
+        @include circle();
+    }
+    .read-more {
+        @include button();
+    }
+}
+.section-welcome{
+    padding: 5em;
+    background-color: $background_three;
+    img{
+        border-radius: 1em;
+    }
+    h4{
+        color: $color_text_one;
+    }
+    .section-list {
+        margin-top: 2em;
+        list-style-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj80rqdcPWlDLfWsJRYxUTetlgl5Oi7qec5nItHJWP4VVIy4dU");
+    }
+}
+.section-about{
+    background-color: $background_four;
+    color: $color_text_two;
+    padding: 4.5em;
+    h5{
+        margin-bottom: 2em;
+    }
+    .division-left{
+        clear: fix;
+        img{
+            float: left;
+            border-radius: 1em;
+            margin: 2em;
+        }
+    }
+    .division-right{
+        clear: fix;
+        img{
+            float: right;
+            border-radius: 1em;
+            margin: 2em;
+        }
+    }
+}
+footer{
+    background-color: $background_one;
+    color: $color_text_two;
+    padding: 2em;
+    .social{
+        @include social-icon();
+        img{
+            width: 4em;
+            height: 4em;
+        }
+    }
+    .people-talking{
+        clear: fix;
+        h5{
+            font-size: 1.4em;
+        }
+        i{
+            float: left;
+            margin: 0.5em;
+        }
+    }
+    .contact-us{
+        span{
+            color: $color_text_one;
+        }
+    }
+}
+
+

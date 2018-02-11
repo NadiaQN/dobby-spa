@@ -1,0 +1,21 @@
+@mixin circle() {
+    border-radius: 50%;
+    border: 0.5em solid #F5DA81;
+    z-index: 2;
+    position: relative;
+    top: -3em;
+}
+@mixin button() {
+    border: none;
+    background-color: #F5DA81;
+    margin-bottom: 4em;
+}
+@mixin social-icon{
+    border-radius: 50%;
+    border: 0.5em solid #FF8000;
+    background-color: $background_two;
+    display: inline-block;
+    margin: 1em;
+    width: 5em;
+    height: 5em;
+}
